@@ -1,0 +1,324 @@
+body {
+    background: #3c404e;
+    color: white;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Carlito', sans-serif;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
+    height: 55px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.name-logo {
+    font-size: 24px;
+}
+
+.s {
+    text-decoration: underline;
+    color: "#36C08A";
+}
+
+nav .sections {
+    display: flex;
+    gap: 10px;
+}
+
+nav .sections a {
+    padding-top: 5%;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 20px;
+    border: 2px solid transparent;  
+}
+
+nav .sections a:hover {
+    transition: .25s;
+    color: #36C08A;
+    border-bottom: solid 2px #36C08A;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    gap: 20px;
+
+}
+
+.apresentation {
+    font-weight: 100;
+    font-size: 72px;
+}
+
+.text {
+    color: #36C08A;
+}
+
+.homi {
+    border-radius: 5px;
+    border: 1px solid #36C08A;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.photo .homi {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px -18px 69px -18px rgba(54,192,138,1);
+    -webkit-box-shadow: 2px -18px 69px -18px rgba(54,192,138,1);
+    -moz-box-shadow: 2px -18px 69px -18px rgba(54,192,138,1);
+}
+
+.photo .subtitle {
+    font-size: 24px;
+}
+
+.photo .h4-sub {
+    font-size: 20px;
+}
+
+.tecn {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.tecn img {
+    margin-right: 25px;
+}
+
+.h2-sub {
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 2px solid rgba(72,152,235,1);
+    width: 200px;
+    height: 40px;
+}
+
+.front, .back, .hab, .xp {
+    position: relative;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px auto;
+    overflow: hidden;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    transition: all 0.5s ease 0s;
+    margin-top: 10px;
+    border: 1px solid #36C08A;
+}
+
+.front:hover, .back:hover, .hab:hover, .xp:hover {
+    transform: scale(1.09);
+    box-shadow: -4px -5px 36px 6px rgba(54,192,138,0.75);
+    -webkit-box-shadow: -4px -5px 36px 6px rgba(54,192,138,0.75);
+    -moz-box-shadow: -4px -5px 36px 6px rgba(54,192,138,0.75);
+}
+.area-img {
+    background: rgb(54,192,138);
+background: linear-gradient(90deg, rgba(54,192,138,1) 0%, rgba(72,152,235,1) 35%, rgba(60,64,78,1) 100%);
+    width: max-content;
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+.area-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.list-skills {
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.list-skills button {
+    width: 100%;
+    outline: none;
+    border: medium none;
+    cursor: pointer;
+    color: white;
+    background: #202125;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    border: 3px solid transparent;
+}
+
+.list-skills button::after,
+.list-skills button::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+}
+
+.list-skills button::after {
+    top: 0;
+    left: 0;
+    border-top: 3px solid transparent;
+}
+
+.list-skills button::before {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid transparent;
+}
+
+.list-skills button:hover::after,
+.list-skills button:hover::before {
+    width: 100%;
+    height: 100%;
+    border-color: #36C08A;
+}
+
+.list-skills button svg {
+    color: black;
+}
+
+.list-certificados {
+    margin: 10px 5%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    z-index: 1;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    background: #202125;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 30px;
+    transition: filter 130ms ease-in 0s;
+    filter: brightness(90%);
+    font-size: 1.5em;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+  }
+
+.item:hover {
+    color: #36C08A;
+    box-shadow: -4px -5px 36px 6px rgba(54,192,138,0.75);
+    -webkit-box-shadow: -4px -5px 36px 6px rgba(54,192,138,0.75);
+    -moz-box-shadow: -4px -5px 36px 6px rgba(54,192,138,0.75);
+}
+.contact-box {
+    background: hsl(226.7, 9.9%, 17.8%);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.media {
+    background: linear-gradient(90deg, rgb(180, 187, 184) 0%, rgb(104, 105, 105)35%, hsl(226.7, 9.9%, 17.8%) 100%);;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.box-media-data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.data-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.box-media-network {
+    text-align: center;    
+    display: flex;
+    padding: 10px 20p;
+    flex-direction: column;
+    gap: 10px;
+    width: 125%;
+}
+.icon a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.icon {
+    background: linear-gradient(90deg, rgb(180, 187, 184) 0%, rgb(104, 105, 105)35%, hsl(226.7, 9.9%, 17.8%) 100%);;;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.icon:hover {
+    transition: .25s;
+    background: linear-gradient(90deg, rgb(180, 187, 184) 0%, rgba(54,192,138,0.75) 100%);
+    transition: filter 130ms ease-in 0s;
+    filter: brightness(90%);
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
